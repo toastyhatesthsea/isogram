@@ -16,7 +16,7 @@ class IsogramChecker {
 
             if (!letter.equals(' ') && !letter.equals('-'))
             {
-                Integer hasValue = values.put(phrase.charAt(i), 1);
+                Integer hasValue = values.put(letter, 1);
 
                 if (hasValue != null)
                 {
@@ -25,13 +25,5 @@ class IsogramChecker {
             }
         }
         return answer;
-
     }
-
-    public void convertToHash(String phrase)
-    {
-        values = new HashMap<>();
-
-    }
-
 }
