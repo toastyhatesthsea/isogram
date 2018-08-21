@@ -12,7 +12,7 @@ class IsogramChecker {
 
         for(int i=0; i<phrase.length() && answer; i++)
         {
-            Character letter = phrase.charAt(i);
+            Character letter = Character.toLowerCase(phrase.charAt(i));
 
             if (!letter.equals(' ') && !letter.equals('-'))
             {
